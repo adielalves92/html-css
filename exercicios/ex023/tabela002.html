@@ -28,6 +28,15 @@
         td.num {
             text-align: right;
         }
+
+        th.media{
+            text-align: left;
+            background-color: gray;
+        }
+
+        th.mediar {
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
@@ -45,29 +54,65 @@
 
     <table>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td class="num">45 919 049</td>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <th scope="row">Matemática</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <th scope="row">0.0</th>
             </tr>
             <tr>
-                <td>Minas Gerais</td>
-                <td class="num">21 168 791</td>
+                <th>Física</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <th scope="row">0.0</th>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17 264 943</td>
+                <th>Química</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <th scope="row">0.0</th>
+            </tr>
+            <tr>
+                <th>Biologia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <th scope="row">0.0</th>
+            </tr>
+            <tr>
+                <th class="media" colspan="4" scope="row">Média de Exatas</th>
+                <th class="mediar" scope="row">0.0</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <th>História</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <th scope="row">0.0</th>
+            </tr>
+            <tr>
+                <th>Geografia</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <th scope="row">0.0</th>
+            </tr>
+            <tr>
+                <th class="media" colspan="4" scope="row">Média de Exatas</th>
+                <th class="mediar" scope="row">0.0</th>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td>200 000 000</td>
-            </tr>
-        </tfoot>
     </table>
 </body>
 </html>
